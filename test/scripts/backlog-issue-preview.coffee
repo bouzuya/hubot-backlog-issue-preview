@@ -104,10 +104,10 @@ describe 'backlog-issue-preview', ->
 
     describe 'receive "HUBOT-123 ... HUBOT-456"', ->
       beforeEach (done) ->
-        @spaceId = process.env.HUBOT_BACKLOG_ISSUE_SPACE_ID
-        @apiKey = process.env.HUBOT_BACKLOG_ISSUE_API_KEY
-        process.env.HUBOT_BACKLOG_ISSUE_SPACE_ID = 'space'
-        process.env.HUBOT_BACKLOG_ISSUE_API_KEY = 'xxx'
+        @spaceId = process.env.HUBOT_BACKLOG_ISSUE_PREVIEW_SPACE_ID
+        @apiKey = process.env.HUBOT_BACKLOG_ISSUE_PREVIEW_API_KEY
+        process.env.HUBOT_BACKLOG_ISSUE_PREVIEW_SPACE_ID = 'space'
+        process.env.HUBOT_BACKLOG_ISSUE_PREVIEW_API_KEY = 'xxx'
         @send = @sinon.spy()
         @http = @sinon.stub()
         getIssue123 = JSON.stringify
@@ -145,8 +145,8 @@ describe 'backlog-issue-preview', ->
         , 10
 
       afterEach ->
-        process.env.HUBOT_BACKLOG_ISSUE_SPACE_ID = @spaceId if @spaceId?
-        process.env.HUBOT_BACKLOG_ISSUE_API_KEY = @apiKey if @apiKey?
+        process.env.HUBOT_BACKLOG_ISSUE_PREVIEW_SPACE_ID = @spaceId if @spaceId?
+        process.env.HUBOT_BACKLOG_ISSUE_PREVIEW_API_KEY = @apiKey if @apiKey?
 
       it 'send "backlog-issue-preview:\\n SUMMARY\\nURL\\nPR URL\\n..."', ->
         assert @send.callCount is 1
