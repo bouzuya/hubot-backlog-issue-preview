@@ -1,6 +1,6 @@
 {
   "name": "hubot-backlog-issue-preview",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A Hubot script that preview backlog issue",
   "main": "index.js",
   "scripts": {
