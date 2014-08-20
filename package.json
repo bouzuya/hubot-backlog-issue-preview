@@ -1,7 +1,7 @@
 {
-  "name": "hubot-backlog-issue",
-  "version": "1.0.0",
-  "description": "A Hubot script that display backlog issue",
+  "name": "hubot-backlog-issue-preview",
+  "version": "2.0.0",
+  "description": "A Hubot script that preview backlog issue",
   "main": "index.js",
   "scripts": {
     "robot": "hubot --adapter shell",
@@ -9,11 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bouzuya/hubot-backlog-issue.git"
+    "url": "git://github.com/bouzuya/hubot-backlog-issue-preview.git"
   },
   "keywords": [
     "hubot",
-    "hubot-scripts"
+    "hubot-scripts",
+    "nulab",
+    "backlog"
   ],
   "author": {
     "name": "bouzuya",
@@ -22,9 +24,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bouzuya/hubot-backlog-issue/issues"
+    "url": "https://github.com/bouzuya/hubot-backlog-issue-preview/issues"
   },
-  "homepage": "https://github.com/bouzuya/hubot-backlog-issue",
+  "homepage": "https://github.com/bouzuya/hubot-backlog-issue-preview",
   "devDependencies": {
     "coffee-script": "^1.7.1",
     "espower-coffee": "^0.1.0",
