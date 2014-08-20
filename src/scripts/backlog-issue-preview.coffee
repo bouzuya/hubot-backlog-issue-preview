@@ -9,7 +9,7 @@
 #   HUBOT_BACKLOG_ISSUE_PREVIEW_API_KEY
 #
 # Commands:
-#   PROJECT-nnn - display backlog issue
+#   PROJECT-nnn - preview backlog issue
 #
 # Author:
 #   bouzuya <m@bouzuya.net>
